@@ -101,6 +101,12 @@
   background-color: var(--black);
 }
 
+@media (max-width: 768px) {
+  .header__authorization {
+    background-color: var(--light-black);
+  }
+}
+
 .header__authorization:hover {
   color: var(--white);
 }
@@ -128,6 +134,12 @@
   font-size: 12px;
   border: none;
   background-color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .header__registration {
+    background-color: var(--light-black);
+  }
 }
 
 .header__registration:hover {
@@ -263,6 +275,7 @@
 
 .season {
   background-color: var(--black);
+  overflow: hidden;
 }
 
 
@@ -355,16 +368,16 @@
   min-height: 600px;
   max-width: 880px;
   width: 100%;
-  margin: 0 auto;
   background-image: url('../image/2018-collection-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 @media (max-width: 1400px) {
   .season__photo {
-    margin-top: 100px;
+    margin: 100px auto 0;
   }
 }
 
